@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset='utf-8'>
+		<title>Maths prototype</title>
+	</head>
+	<body class='centre'>
+		<div id='topbar'>
+			<button type="button" name="button" class='selector addition'>Addition</button>
+			<button type="button" name="button" class='selector minus'>Minus</button>
+			<button type="button" name="button" class='selector multiplication'>Multiplication</button>
+		</div>
+		<div id='stage'>
+			<p>1</p>
+			<p>2</p>
+			<p></p>
+			<p>3</p>
+			<p>4</p>
+			<p>+</p>
+			<p id='stageLine'></p>
+			<p>5</p>
+			<p>6</p>
+			<p>7</p>
+		</div>
+		<div id='answerArea'>
+			<input type="number" name="answer" value="" id='answer'>
+			<button type="button" name="submit" id='submit'>Answer</button>
+			<div id='response'>
+				<div class='stack' id='responseSuccess'>
+					&#10003;
+				</div>
+				<div class='stack' id='responseFailure'>
+					x
+				</div>
+			</div>
+		</div>
+	</body>
+	<link rel="stylesheet" type="text/css" href="maths.css">
+	<script>
+	</script>
+	<script src='maths.js'></script>
+</html>
