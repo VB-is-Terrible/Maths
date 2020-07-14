@@ -21,8 +21,7 @@ body {
 		'line line line';
 	grid-auto-flow: row;
 	display: grid;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 p {
 	height: 1em;
@@ -47,7 +46,7 @@ p {
 	margin-left: 1em;
 }
 #topbar {
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 .stack {
 	position: absolute;
