@@ -1,0 +1,61 @@
+.centre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#stage, html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	flex-direction: column;
+}
+#stage {
+	grid-template-rows: 1fr 1fr .25em 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: .5em;
+	grid-column-gap: .5em;
+	grid-template-areas:
+		'1x1 2x1 . '
+		'1x2 2x2 2x3'
+		'line line line';
+	grid-auto-flow: row;
+	display: grid;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+p {
+	height: 1em;
+	width: 1em;
+	padding: 0em;
+	margin: 0px;
+}
+#stageLine {
+	grid-area: line;
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+#answerArea {
+	margin-top: 1em;
+	display: flex;
+}
+#answer {
+	margin-right: 1em;
+}
+#response {
+	margin-left: 1em;
+}
+#topbar {
+	margin-bottom: 10%;
+}
+.stack {
+	position: absolute;
+	display: none;
+}
+#responseSuccess {
+	color: green;
+}
+#responseFailure {
+	color: red;
+}
